@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Bruce Kane CPA | Certified Public Accountant in Syracuse, NY</title>
-    <meta name="description" content="Learn more about Bruce Kane CPA, a trusted Certified Public Accountant in Syracuse, New York, dedicated to strategic financial advisory, tax planning, and corporate transactions.">
+    <title>Bruce Kane CPA | Certified Public Accountant in Syracuse, NY</title>
+    <meta name="description" content="Bruce Kane CPA is a Certified Public Accountant in Syracuse, New York specializing in tax planning, business mergers and acquisitions, and strategic financial advisory for entrepreneurs and executives.">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -39,17 +39,22 @@
             color: var(--primary-gold) !important;
         }
 
-        /* Inner Page Header */
-        .page-header {
+        /* Hero Section */
+        .hero-section {
             background-color: var(--dark-bg);
             color: var(--light-bg);
-            padding: 60px 0;
+            padding: 80px 0;
             border-bottom: 5px solid var(--primary-gold);
-            text-align: center;
         }
-        .page-title {
+        .hero-title {
             color: var(--primary-gold);
             font-weight: 700;
+        }
+        .hero-img {
+            border: 4px solid var(--primary-gold);
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
         }
 
         /* Section Headlines */
@@ -57,7 +62,7 @@
             color: var(--dark-bg);
             position: relative;
             padding-bottom: 10px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
             font-weight: 700;
         }
         .section-title::after {
@@ -65,17 +70,43 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 50px;
+            width: 60px;
             height: 3px;
             background-color: var(--primary-gold);
         }
 
-        /* Highlight Box */
-        .highlight-box {
+        /* Feature Cards */
+        .card-custom {
+            border: none;
+            border-top: 4px solid var(--accent-blue);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+            background-color: #fdfdfd;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--primary-gold);
+        }
+        .card-custom-title {
+            color: var(--dark-bg);
+            font-weight: 600;
+        }
+
+        /* Text Link Custom Color */
+        .content-link {
+            color: #0d6efd;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .content-link:hover {
+            color: var(--dark-bg);
+        }
+
+        /* Vision & Mission Split */
+        .split-section {
             background-color: #f9f9f9;
-            border-left: 4px solid var(--accent-blue);
-            padding: 30px;
-            border-radius: 4px;
+            padding: 60px 0;
         }
 
         /* Footer */
@@ -109,63 +140,126 @@
     <!-- Header / Navigation -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Bruce Kane CPA</a>
+            <a class="navbar-brand" href="#">Bruce Kane CPA</a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="#" style="color: var(--primary-gold) !important;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#" style="color: var(--primary-gold) !important;">About Us</a>
+                        <a class="nav-link" href="about.html">About Us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Page Title Header -->
-    <div class="page-header">
+    <!-- Hero Section -->
+    <header class="hero-section">
         <div class="container">
-            <h1 class="page-title display-5">About Us</h1>
-            <p class="lead text-white-50 mb-0">Certified Public Accountant Based in Syracuse, New York</p>
-        </div>
-    </div>
-
-    <!-- Main About Content Section -->
-    <main class="container py-5">
-        <div class="row g-5">
-            <!-- Left Side: Profile Text -->
-            <div class="col-lg-8">
-                <section class="mb-5">
-                    <h2 class="section-title">About Bruce Kane CPA</h2>
-                    <p>Bruce Kane CPA is a Certified Public Accountant with a distinguished career in tax planning, financial compliance, and business advisory services in Syracuse, New York. He brings decades of hands-on expertise to every client engagement, helping entrepreneurs, executives, and organizations navigate complex tax challenges with clarity and confidence. Bruce Kane CPA is known throughout Central New York for combining deep technical knowledge with a practical, straightforward approach that consistently produces strong financial outcomes for the businesses and individuals he serves.</p>
-                    <p>His work as a Certified Public Accountant goes well beyond preparing returns and meeting filing deadlines. Bruce Kane CPA invests genuine time in understanding each client's financial structure, business goals, and long-term objectives before developing any recommendation. This thorough, client-first approach ensures that every strategy he delivers is precisely aligned with the real needs of the person or organization it is designed to serve. For entrepreneurs and executives in Syracuse who need a trusted CPA, Bruce Kane CPA provides the expertise and commitment that make a lasting difference.</p>
-                </section>
-
-                <section class="mb-5">
-                    <h3 class="h4 text-dark mb-3">Public Speaking and Education</h3>
-                    <p>Bruce Kane CPA is a recognized speaker and educator in the Central New York business community, regularly sharing his professional expertise with business owners, executives, trade associations, and professional organizations throughout New York State. His speaking engagements cover a broad range of tax and financial planning topics with a consistent focus on practical, immediately applicable insights that his audiences can use to make better financial decisions.</p>
-                    <p>His presentations are praised for combining technical depth with clear, accessible communication. Bruce Kane CPA does not simply recite regulatory rules in abstract terms. He contextualizes every topic, illustrating how changes in tax law affect real business decisions and what specific steps organizations can take to improve their financial position in response.</p>
-                </section>
-            </div>
-
-            <!-- Right Side: Sidebar with Mission & Vision -->
-            <div class="col-lg-4">
-                <div class="highlight-box shadow-sm mb-4">
-                    <h3 class="h4 fw-bold mb-3" style="color: var(--dark-bg);"><i class="fa-solid fa-bullseye me-2" style="color: var(--accent-blue);"></i>Our Mission</h3>
-                    <p class="small text-muted mb-0">To deliver the highest standard of tax planning and financial advisory service to every client in Syracuse and Central New York. Through precise analysis, personalized strategies, and consistent professional engagement, we help our clients navigate a complex and constantly evolving tax environment with full confidence in their financial position.</p>
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h1 class="hero-title display-4">Bruce Kane CPA</h1>
+                    <p class="lead fs-3 text-white-50">Certified Public Accountant Based in Syracuse, New York</p>
+                    <p class="fs-5 text-light">Specializing in proactive tax planning, business mergers and acquisitions, and strategic financial advisory for entrepreneurs, executives, and growing organizations.</p>
                 </div>
-
-                <div class="highlight-box shadow-sm" style="border-left-color: var(--primary-gold);">
-                    <h3 class="h4 fw-bold mb-3" style="color: var(--dark-bg);"><i class="fa-solid fa-eye me-2" style="color: var(--primary-gold);"></i>Our Vision</h3>
-                    <p class="small text-muted mb-0">We envision a future where every entrepreneur and executive in Central New York has access to sophisticated, proactive tax guidance. We believe that small and mid-size businesses deserve the same level of strategic, personalized tax planning that major organizations rely on, using expertise as a strategic instrument for lasting success.</p>
+                <div class="col-md-5 text-center">
+                    <img src="Bruce Kane CPA.jpg" alt="Bruce Kane CPA" class="hero-img shadow">
                 </div>
             </div>
         </div>
-    </main>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">About Bruce Kane CPA</h2>
+                <p><a href="https://sites.google.com/view/bruce-kane-cpa/home/" class="content-link" target="_blank">Bruce Kane CPA</a> is a Certified Public Accountant with a distinguished career in tax planning, financial compliance, and business advisory services in Syracuse, New York. He brings decades of hands-on expertise to every client engagement, helping entrepreneurs, executives, and organizations navigate complex tax challenges with clarity and confidence. Bruce Kane CPA is known throughout Central New York for combining deep technical knowledge with a practical, straightforward approach that consistently produces strong financial outcomes for the businesses and individuals he serves.</p>
+                <p>His work as a Certified Public Accountant goes well beyond preparing returns and meeting filing deadlines. Bruce Kane CPA invests genuine time in understanding each client's financial structure, business goals, and long-term objectives before developing any recommendation. This thorough, client-first approach ensures that every strategy he delivers is precisely aligned with the real needs of the person or organization it is designed to serve. For entrepreneurs and executives in Syracuse who need a trusted CPA, <a href="https://brucekanecpa.framer.website/" class="content-link" target="_blank">Bruce Kane CPA</a> provides the expertise and commitment that make a lasting difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mx-auto mb-5">Core Competencies</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom p-4">
+                        <h3 class="card-custom-title h4 mb-3">Tax Planning</h3>
+                        <p class="small text-muted">Bruce Kane CPA develops tailored, comprehensive tax planning strategies for businesses and individuals at every stage of financial development. He conducts thorough analyses of income data, expense records, and long-range financial projections to identify every legitimate opportunity for reducing tax liability while maintaining strict compliance with federal, state, and local regulations. His planning work is proactive and continuous, meaning clients benefit from year-round attention to their tax position rather than a single annual review conducted under deadline pressure.</p>
+                        <p class="small text-muted">When tax laws change, Bruce Kane CPA adjusts his clients' strategies in real time to ensure they remain optimally positioned. This forward-looking approach eliminates unpleasant surprises that result from outdated planning and consistently delivers stronger financial results than reactive, end-of-year approaches. For any business or individual in Syracuse seeking a Certified Public Accountant who prioritizes their long-term financial stability, Bruce Kane CPA provides the standard of planning excellence they deserve.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4">
+                        <h3 class="card-custom-title h4 mb-3">Business Mergers and Acquisitions</h3>
+                        <p class="small text-muted">Bruce Kane CPA provides specialized tax and financial advisory support to clients navigating the full complexity of business mergers, acquisitions, and corporate transactions. He understands that these events represent some of the most consequential financial decisions a business owner will ever face, and that the tax structure of a transaction can have a profound and lasting impact on the financial value it ultimately delivers to all parties involved.</p>
+                        <p class="small text-muted">His involvement in M&A engagements is thorough and begins well before any agreement is finalized. Bruce Kane CPA conducts detailed due diligence reviews to evaluate target company tax histories, identify potential liabilities, and analyze the full implications of different deal structures including asset purchases and equity transfers. His findings give clients the complete, accurate picture they need to negotiate with confidence and to close transactions that are both legally sound and financially optimized. After closing, Bruce Kane CPA continues to support clients through the integration process to ensure the full value of the transaction is realized in practice.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4">
+                        <h3 class="card-custom-title h4 mb-3">Executive Tax Guidance</h3>
+                        <p class="small text-muted">Bruce Kane CPA works directly with entrepreneurs, founders, and senior corporate executives whose tax situations demand a higher level of expertise and more sophisticated planning than standard compliance services can provide. His executive clients frequently manage complex multi-entity corporate structures, deferred compensation arrangements, equity-based assets, and long-range succession or exit planning strategies that require careful, customized handling by a Certified Public Accountant with genuine depth of experience.</p>
+                        <p class="small text-muted">His approach with executive and entrepreneur clients is collaborative and transparent. Bruce Kane CPA takes the time to fully understand each client's professional goals and financial circumstances before developing any recommendation, and he maintains active communication throughout the year to keep strategies aligned with the client's evolving situation. The result is a long-term advisory relationship founded on trust, clarity, and a consistent record of meaningful financial results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise & Education Section -->
+    <section class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-6">
+                <h2 class="section-title">Expertise</h2>
+                <div class="mb-4">
+                    <h5>Professional Tax Planning</h5>
+                    <p class="text-muted">Tax planning is the foundation of everything Bruce Kane CPA does as a Certified Public Accountant. He has spent his career building a comprehensive command of the full U.S. tax code at the federal, state, and local levels, and applying that command to develop strategies that produce real, measurable financial benefits for the businesses and individuals he serves. His planning process is exhaustive, covering income tax, capital gains, payroll obligations, entity-level taxation, and multi-state compliance across a wide range of business structures and financial situations.</p>
+                    <p class="text-muted">Bruce Kane CPA's planning work begins with a complete and detailed financial review that gives him an accurate, current picture of the client's situation and a clear understanding of where they are headed. From that foundation, he builds strategies that are precisely calibrated to the client's specific goals, legally minimizing tax exposure while ensuring complete regulatory compliance at every level.</p>
+                </div>
+                <div class="mb-4">
+                    <h5>Business Mergers and Acquisitions</h5>
+                    <p class="text-muted">Bruce Kane CPA's expertise in mergers and acquisitions tax advisory is one of the most valuable and distinctive elements of his professional practice. He has guided clients through transactions of varying scale and complexity, consistently delivering thorough, accurate analysis and clear strategic guidance that allows deals to close with confidence and post-transaction integration to proceed without costly financial complications.</p>
+                    <p class="text-muted">His M&A advisory work covers every phase of a transaction, from pre-deal due diligence and liability identification through transaction structuring analysis and post-closing tax planning. For buyers, Bruce Kane CPA ensures a complete understanding of the tax profile of what is being acquired before the deal is finalized. For sellers, his planning expertise helps structure exits in the most tax-efficient manner possible, protecting the financial outcome of a transaction they have often spent years building toward.</p>
+                </div>
+                <div>
+                    <h5>Strategic Entity Selection</h5>
+                    <p class="text-muted">Selecting the right legal and tax structure is one of the most impactful early decisions a business owner can make. Bruce Kane CPA helps entrepreneurs evaluate the tax and legal implications of every major entity type including sole proprietorships, general and limited partnerships, limited liability companies, S-corporations, and C-corporations, guiding them toward the structure that best supports their current operations, their growth plans, and their long-term financial objectives.</p>
+                    <p class="text-muted">As businesses grow and circumstances evolve, Bruce Kane CPA also provides restructuring advisory to help clients transition to more advantageous structures without triggering unnecessary tax consequences.</p>
+                </div>
+            </div>
+            <div class="col-md-6 bg-light p-4 rounded border-start border-4 shadow-sm" style="border-color: var(--primary-gold) !important;">
+                <h3 class="h4 mb-3" style="color: var(--dark-bg); font-weight:700;">Public Speaking and Education</h3>
+                <p>Bruce Kane CPA is a recognized speaker and educator in the Central New York business community, regularly sharing his professional expertise with business owners, executives, trade associations, and professional organizations throughout New York State. His speaking engagements cover a broad range of tax and financial planning topics with a consistent focus on practical, immediately applicable insights that his audiences can use to make better financial decisions.</p>
+                <p>His presentations are praised for combining technical depth with clear, accessible communication. Bruce Kane CPA does not simply recite regulatory rules in abstract terms. He contextualizes every topic, illustrating how changes in tax law affect real business decisions and what specific steps organizations can take to improve their financial position in response.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="split-section border-top">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-3" style="color: var(--dark-bg);"><i class="fa-solid fa-bullseye me-2" style="color: var(--accent-blue);"></i>My Mission</h3>
+                    <p>My mission as Bruce Kane CPA is to deliver the highest standard of tax planning and financial advisory service to every client I work with in Syracuse and throughout Central New York. I believe that accurate, proactive tax guidance is one of the most powerful tools available to entrepreneurs, executives, and organizations that are committed to building and preserving long-term financial strength. Through precise analysis, personalized strategies, and consistent professional engagement, I help my clients navigate a complex and constantly evolving tax environment with full confidence in their financial position.</p>
+                    <p>As a Certified Public Accountant, I am committed to being more than a service provider. I aim to be a trusted partner that clients can rely on throughout the year for honest, knowledgeable guidance on the financial decisions that matter most. Every person and organization I serve deserves a CPA who brings genuine expertise, clear communication, and a real investment in their success to every engagement.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-3" style="color: var(--dark-bg);"><i class="fa-solid fa-eye me-2" style="color: var(--accent-blue);"></i>My Vision</h3>
+                    <p>Bruce Kane CPA envisions a future where every entrepreneur and executive in Syracuse and Central New York has access to the kind of sophisticated, proactive tax guidance that was once available only to large corporations. He believes that small and mid-size businesses deserve the same level of strategic, personalized tax planning that major organizations rely on, and he has built his practice specifically to deliver that standard of service to a broader range of clients across the region.</p>
+                    <p>His vision for the future of his practice is centered on continuous growth in both knowledge and capability. Bruce Kane CPA is committed to staying at the forefront of developments in tax law and financial regulation, investing in the tools and relationships that allow him to serve clients at the highest possible level. His goal is not simply to help clients comply with the tax code but to use his expertise as a strategic instrument that actively supports their growth, protects their financial interests, and positions them for lasting success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
