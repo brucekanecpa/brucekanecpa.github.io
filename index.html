@@ -1,437 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bruce Kane CPA | Tax Professional in Syracuse, New York</title>
-  <meta name="description" content="Bruce Kane CPA is a tax professional in Syracuse, New York specializing in tax planning and business mergers and acquisitions. Work with Bruce Kane CPA for clear, accurate tax guidance." />
-  <meta name="keywords" content="Bruce Kane CPA, Bruce S. Kane CPA, tax professional Syracuse New York, tax planning Syracuse, business mergers and acquisitions Syracuse, CPA Syracuse New York" />
-  <meta name="author" content="Bruce Kane CPA" />
-  <meta property="og:title" content="Bruce Kane CPA | Tax Professional in Syracuse, New York" />
-  <meta property="og:description" content="Bruce Kane CPA works with entrepreneurs, executives, and organizations in Syracuse, New York offering tax planning and business mergers and acquisitions guidance." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://brucekanecpa.github.io" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+4:wght@300;400;500&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --navy: #1a2642;
-      --gold: #c9a84c;
-      --cream: #f8f5ef;
-      --warm-white: #fdfcf9;
-      --text: #2c2c2c;
-      --text-light: #6b6b6b;
-      --border: #e0d9cc;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruce Kane CPA | Certified Public Accountant in Syracuse, NY</title>
+    <meta name="description" content="Bruce Kane CPA is a Certified Public Accountant in Syracuse, New York specializing in tax planning, business mergers and acquisitions, and strategic financial advisory for entrepreneurs and executives.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --dark-bg: #000000;
+            --light-bg: #FFFFFF;
+            --accent-blue: #8ab9ff;
+        }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            background-color: var(--light-bg);
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        /* Navbar Styling */
+        .navbar {
+            background-color: var(--dark-bg) !important;
+            border-bottom: 3px solid var(--primary-gold);
+        }
+        .navbar-brand, .nav-link {
+            color: var(--light-bg) !important;
+            font-weight: 600;
+        }
+        .nav-link:hover {
+            color: var(--primary-gold) !important;
+        }
 
-    body {
-      font-family: 'Source Serif 4', serif;
-      background-color: var(--warm-white);
-      color: var(--text);
-      line-height: 1.8;
-    }
+        /* Hero Section */
+        .hero-section {
+            background-color: var(--dark-bg);
+            color: var(--light-bg);
+            padding: 80px 0;
+            border-bottom: 5px solid var(--primary-gold);
+        }
+        .hero-title {
+            color: var(--primary-gold);
+            font-weight: 700;
+        }
+        .hero-img {
+            border: 4px solid var(--primary-gold);
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
 
-    /* NAV */
-    nav {
-      background: var(--navy);
-      padding: 1.2rem 4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+        /* Section Headlines */
+        .section-title {
+            color: var(--dark-bg);
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--primary-gold);
+        }
 
-    .nav-logo {
-      font-family: 'Playfair Display', serif;
-      color: var(--gold);
-      font-size: 1.2rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
+        /* Feature Cards */
+        .card-custom {
+            border: none;
+            border-top: 4px solid var(--accent-blue);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            height: 100%;
+            background-color: #fdfdfd;
+        }
+        .card-custom:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--primary-gold);
+        }
+        .card-custom-title {
+            color: var(--dark-bg);
+            font-weight: 600;
+        }
 
-    .nav-links {
-      display: flex;
-      gap: 2.5rem;
-      list-style: none;
-    }
+        /* Vision & Mission Split */
+        .split-section {
+            background-color: #f9f9f9;
+            padding: 60px 0;
+        }
 
-    .nav-links a {
-      color: #c8cdd8;
-      text-decoration: none;
-      font-size: 0.88rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      font-family: 'Source Serif 4', serif;
-      font-weight: 300;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--gold);
-    }
-
-    /* HERO */
-    .hero {
-      background: var(--navy);
-      padding: 7rem 4rem 6rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: radial-gradient(ellipse at center top, rgba(201,168,76,0.08) 0%, transparent 70%);
-    }
-
-    .hero-eyebrow {
-      font-size: 0.8rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1.5rem;
-      font-weight: 400;
-    }
-
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.8rem, 5vw, 4.2rem);
-      color: #ffffff;
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-tagline {
-      font-size: 1.1rem;
-      color: #a8b0c2;
-      font-weight: 300;
-      max-width: 480px;
-      margin: 0 auto 3rem;
-    }
-
-    .hero-divider {
-      width: 60px;
-      height: 2px;
-      background: var(--gold);
-      margin: 0 auto 2.5rem;
-    }
-
-    .hero-location {
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #6b7590;
-    }
-
-    /* SECTION BASE */
-    section {
-      padding: 5rem 4rem;
-    }
-
-    .section-inner {
-      max-width: 860px;
-      margin: 0 auto;
-    }
-
-    .section-label {
-      font-size: 0.75rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
-      display: block;
-    }
-
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.8rem, 3vw, 2.6rem);
-      color: var(--navy);
-      font-weight: 600;
-      line-height: 1.25;
-      margin-bottom: 2rem;
-    }
-
-    .section-divider {
-      width: 48px;
-      height: 2px;
-      background: var(--gold);
-      margin-bottom: 2.5rem;
-    }
-
-    p {
-      font-size: 1.05rem;
-      color: var(--text);
-      margin-bottom: 1.4rem;
-      font-weight: 300;
-    }
-
-    /* ABOUT */
-    #about {
-      background: var(--warm-white);
-    }
-
-    /* COMPETENCIES */
-    #competencies {
-      background: var(--cream);
-    }
-
-    .competency-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-
-    .competency-card {
-      background: var(--warm-white);
-      border: 1px solid var(--border);
-      padding: 2rem;
-      border-top: 3px solid var(--gold);
-    }
-
-    .competency-card h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.15rem;
-      color: var(--navy);
-      margin-bottom: 0.8rem;
-      font-weight: 600;
-    }
-
-    .competency-card p {
-      font-size: 0.97rem;
-      margin-bottom: 0;
-      color: var(--text-light);
-    }
-
-    /* EXPERTISE */
-    #expertise {
-      background: var(--warm-white);
-    }
-
-    /* QUOTE */
-    #quote {
-      background: var(--navy);
-      text-align: center;
-      padding: 5rem 4rem;
-    }
-
-    .quote-mark {
-      font-family: 'Playfair Display', serif;
-      font-size: 5rem;
-      color: var(--gold);
-      line-height: 0.5;
-      margin-bottom: 1.5rem;
-      display: block;
-      opacity: 0.6;
-    }
-
-    blockquote {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
-      color: #ffffff;
-      font-weight: 400;
-      font-style: italic;
-      max-width: 720px;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
-    }
-
-    .quote-author {
-      font-size: 0.82rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-
-    /* MISSION VISION */
-    #mission-vision {
-      background: var(--cream);
-    }
-
-    .mv-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 3rem;
-      margin-top: 1rem;
-    }
-
-    .mv-block h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.4rem;
-      color: var(--navy);
-      margin-bottom: 1rem;
-      font-weight: 600;
-      padding-bottom: 0.8rem;
-      border-bottom: 2px solid var(--gold);
-    }
-
-    .mv-block p {
-      font-size: 1rem;
-      color: var(--text-light);
-      font-weight: 300;
-    }
-
-    /* FOOTER */
-    footer {
-      background: var(--navy);
-      padding: 3rem 4rem;
-      text-align: center;
-    }
-
-    .footer-name {
-      font-family: 'Playfair Display', serif;
-      color: var(--gold);
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .footer-info {
-      color: #6b7590;
-      font-size: 0.85rem;
-      letter-spacing: 1px;
-    }
-
-    @media (max-width: 768px) {
-      nav { padding: 1rem 1.5rem; }
-      .nav-links { gap: 1.2rem; }
-      section { padding: 3.5rem 1.5rem; }
-      .hero { padding: 5rem 1.5rem 4rem; }
-      #quote { padding: 4rem 1.5rem; }
-      footer { padding: 2.5rem 1.5rem; }
-      .competency-grid { grid-template-columns: 1fr; }
-      .mv-grid { grid-template-columns: 1fr; gap: 2rem; }
-    }
-  </style>
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--light-bg);
+            padding: 40px 0 20px 0;
+            border-top: 4px solid var(--primary-gold);
+        }
+        footer a {
+            color: var(--light-bg);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: var(--primary-gold);
+        }
+        .social-icons a {
+            font-size: 1.3rem;
+            margin: 0 10px;
+            display: inline-block;
+            color: var(--accent-blue);
+        }
+        .social-icons a:hover {
+            color: var(--primary-gold);
+        }
+    </style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <div class="nav-logo">Bruce Kane CPA</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#competencies">Competencies</a></li>
-      <li><a href="#expertise">Expertise</a></li>
-      <li><a href="#mission-vision">Mission</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <div class="hero">
-    <p class="hero-eyebrow">Syracuse, New York</p>
-    <h1>Bruce Kane CPA</h1>
-    <div class="hero-divider"></div>
-    <p class="hero-tagline">Experienced tax professional in Syracuse, New York</p>
-    <p class="hero-location">Tax Planning  •  Business Mergers & Acquisitions</p>
-  </div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-inner">
-      <span class="section-label">About</span>
-      <h2 class="section-title">About Bruce Kane CPA</h2>
-      <div class="section-divider"></div>
-      <p>Bruce S. Kane CPA is a tax professional based in Syracuse, New York. He works in two specific areas: tax planning and business mergers and acquisitions. If you are an entrepreneur, an executive, or running an organization, Bruce Kane CPA works directly with you to make sure your tax situation is handled with accuracy and care.</p>
-      <p>His clients come to him because they want clear answers, not complicated explanations. Bruce S. Kane CPA takes your specific financial situation and gives you guidance that makes sense for where you are and where you want to go. Every recommendation is built around your numbers, not a standard checklist.</p>
-      <p>Bruce Kane CPA has worked with a wide range of clients across Syracuse, New York, from individual business owners making their first acquisition to established organizations managing ongoing tax planning. Each client gets the same level of attention and the same commitment to accuracy.</p>
-      <p>He is also a frequent speaker on tax-related topics. He brings the same direct and practical communication style to his speaking engagements as he does to his client work. Whether you are in the room or working with him one on one, the approach stays the same: accurate information, honest guidance, and a focus on what actually works for your situation.</p>
-    </div>
-  </section>
-
-  <!-- COMPETENCIES -->
-  <section id="competencies">
-    <div class="section-inner">
-      <span class="section-label">Core Competencies</span>
-      <h2 class="section-title">Core Competencies of Bruce Kane CPA</h2>
-      <div class="section-divider"></div>
-      <div class="competency-grid">
-        <div class="competency-card">
-          <h3>Tax Planning</h3>
-          <p>Bruce S. Kane CPA helps you structure your finances in a way that keeps you compliant and reduces what you owe. He looks at your current situation and plans for what is coming, so you are not caught off guard when tax season arrives.</p>
+    <!-- Header / Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bruce Kane CPA</a>
+            <button class="navbar-collapse-toggle navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: var(--primary-gold) !important;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="competency-card">
-          <h3>Business Mergers and Acquisitions</h3>
-          <p>When you are buying or selling a business, every decision has a tax consequence. Bruce Kane CPA helps you understand those consequences before you commit to anything and gives you a clear picture of what it means for your finances.</p>
-        </div>
-        <div class="competency-card">
-          <h3>Client-Specific Guidance</h3>
-          <p>No two clients have the same financial situation. Bruce S. Kane CPA builds his recommendations around your specific goals, not a standard template. You get advice that reflects your actual numbers and your actual needs.</p>
-        </div>
-        <div class="competency-card">
-          <h3>Clear Communication</h3>
-          <p>Bruce Kane CPA explains complex tax topics in plain language. If you do not have a tax background, that is not a problem. He breaks down what applies to your situation and explains it in a way that makes sense to you.</p>
-        </div>
-        <div class="competency-card">
-          <h3>Long-Term Focus</h3>
-          <p>Bruce S. Kane CPA is not only thinking about this year's return. He helps you plan for where you want to be in the years ahead, so your financial decisions today support your goals tomorrow.</p>
-        </div>
-        <div class="competency-card">
-          <h3>Accuracy and Dedication</h3>
-          <p>Bruce Kane CPA reviews every detail carefully before giving you a recommendation. He stays dedicated to each client throughout the process, not just at the start.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- EXPERTISE -->
-  <section id="expertise">
-    <div class="section-inner">
-      <span class="section-label">Expertise</span>
-      <h2 class="section-title">Expertise of Bruce Kane CPA</h2>
-      <div class="section-divider"></div>
-      <p>Bruce S. Kane CPA has built his expertise around two areas that directly affect the financial health of businesses and individuals: tax planning and business mergers and acquisitions.</p>
-      <p>In tax planning, he works with clients to build a clear strategy that reduces liability and supports financial growth. He understands how tax law applies to different types of businesses and individual situations, and he uses that knowledge to give you guidance that holds up over time.</p>
-      <p>In business mergers and acquisitions, Bruce Kane CPA brings a level of detail and focus that is essential when large financial transactions are on the table. He reviews the tax structure of deals, identifies potential issues before they become costly, and helps you move forward with full knowledge of what you are stepping into.</p>
-      <p>Beyond these two areas, Bruce S. Kane CPA works with entrepreneurs who are navigating the financial side of building a business, executives who need senior-level tax advice, and organizations that require ongoing support for their tax planning needs. His experience across these groups gives him a broad view of how tax decisions affect different types of clients.</p>
-      <p>He is also recognized in the professional community as a speaker on tax topics. His presentations are known for being practical and grounded in real scenarios, not theoretical discussions that do not connect to how businesses actually operate.</p>
-    </div>
-  </section>
-
-  <!-- QUOTE -->
-  <div id="quote">
-    <span class="quote-mark">"</span>
-    <blockquote>Every financial decision you make has a tax consequence. My job is to make sure you understand that consequence before you make the decision, not after.</blockquote>
-    <p class="quote-author">Bruce Kane CPA  •  Syracuse, New York</p>
-  </div>
-
-  <!-- MISSION & VISION -->
-  <section id="mission-vision">
-    <div class="section-inner">
-      <span class="section-label">Mission & Vision</span>
-      <h2 class="section-title">Mission and Vision</h2>
-      <div class="section-divider"></div>
-      <div class="mv-grid">
-        <div class="mv-block">
-          <h3>Mission</h3>
-          <p>The mission of Bruce S. Kane CPA is to give every client the tax guidance they need to make decisions with confidence. This means breaking down complex tax issues into clear, understandable information, building strategies that fit each client's specific situation, and staying focused on accuracy at every step. Whether you are an entrepreneur, an executive, or an organization, the goal is the same: to make sure you have the right information at the right time so your financial decisions move you in the direction you want to go.</p>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h1 class="hero-title display-4">Bruce Kane CPA</h1>
+                    <p class="lead fs-3 text-white-50">Certified Public Accountant Based in Syracuse, New York</p>
+                    <p class="fs-5 text-light">Specializing in proactive tax planning, business mergers and acquisitions, and strategic financial advisory for entrepreneurs, executives, and growing organizations.</p>
+                    <a href="contact.html" class="btn btn-lg mt-3" style="background-color: var(--primary-gold); color: var(--dark-bg); font-weight: bold;">Schedule a Consultation</a>
+                </div>
+                <div class="col-md-5 text-center">
+                    <img src="Bruce Kane CPA.jpg" alt="Bruce Kane CPA" class="hero-img shadow">
+                </div>
+            </div>
         </div>
-        <div class="mv-block">
-          <h3>Vision</h3>
-          <p>The vision of Bruce S. Kane CPA is to be the tax professional that individuals and businesses in Syracuse, New York and beyond turn to when they need guidance they can trust. This means building long-term relationships with clients, staying current on tax law and how it affects real financial situations, and continuing to bring the same level of accuracy and dedication to every engagement. The focus is on steady, informed financial planning that gives clients a clear path forward, year after year.</p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container py-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">About Bruce Kane CPA</h2>
+                <p>Bruce Kane CPA is a Certified Public Accountant with a distinguished career in tax planning, financial compliance, and business advisory services in Syracuse, New York. He brings decades of hands-on expertise to every client engagement, helping entrepreneurs, executives, and organizations navigate complex tax challenges with clarity and confidence. Bruce Kane CPA is known throughout Central New York for combining deep technical knowledge with a practical, straightforward approach that consistently produces strong financial outcomes for the businesses and individuals he serves.</p>
+                <p>His work as a Certified Public Accountant goes well beyond preparing returns and meeting filing deadlines. Bruce Kane CPA invests genuine time in understanding each client's financial structure, business goals, and long-term objectives before developing any recommendation. This thorough, client-first approach ensures that every strategy he delivers is precisely aligned with the real needs of the person or organization it is designed to serve. For entrepreneurs and executives in Syracuse who need a trusted CPA, Bruce Kane CPA provides the expertise and commitment that make a lasting difference.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p class="footer-name">Bruce S. Kane CPA</p>
-    <p class="footer-info">Tax Professional  •  Syracuse, New York  •  Tax Planning  •  Business Mergers & Acquisitions</p>
-  </footer>
+    <!-- Core Competencies Section -->
+    <section id="services" class="bg-light py-5">
+        <div class="container">
+            <h2 class="section-title text-center mx-auto mb-5">Core Competencies</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card card-custom p-4">
+                        <h3 class="card-custom-title h4 mb-3">Tax Planning</h3>
+                        <p class="small text-muted">Bruce Kane CPA develops tailored, comprehensive tax planning strategies for businesses and individuals at every stage of financial development. He conducts thorough analyses of income data, expense records, and long-range financial projections to identify every legitimate opportunity for reducing tax liability while maintaining strict compliance with federal, state, and local regulations. His planning work is proactive and continuous, meaning clients benefit from year-round attention to their tax position rather than a single annual review conducted under deadline pressure.</p>
+                        <p class="small text-muted">When tax laws change, Bruce Kane CPA adjusts his clients' strategies in real time to ensure they remain optimally positioned. This forward-looking approach eliminates unpleasant surprises that result from outdated planning and consistently delivers stronger financial results than reactive, end-of-year approaches. For any business or individual in Syracuse seeking a Certified Public Accountant who prioritizes their long-term financial stability, Bruce Kane CPA provides the standard of planning excellence they deserve.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4">
+                        <h3 class="card-custom-title h4 mb-3">Business Mergers and Acquisitions</h3>
+                        <p class="small text-muted">Bruce Kane CPA provides specialized tax and financial advisory support to clients navigating the full complexity of business mergers, acquisitions, and corporate transactions. He understands that these events represent some of the most consequential financial decisions a business owner will ever face, and that the tax structure of a transaction can have a profound and lasting impact on the financial value it ultimately delivers to all parties involved.</p>
+                        <p class="small text-muted">His involvement in M&A engagements is thorough and begins well before any agreement is finalized. Bruce Kane CPA conducts detailed due diligence reviews to evaluate target company tax histories, identify potential liabilities, and analyze the full implications of different deal structures including asset purchases and equity transfers. His findings give clients the complete, accurate picture they need to negotiate with confidence and to close transactions that are both legally sound and financially optimized. After closing, Bruce Kane CPA continues to support clients through the integration process to ensure the full value of the transaction is realized in practice.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card-custom p-4">
+                        <h3 class="card-custom-title h4 mb-3">Executive Tax Guidance</h3>
+                        <p class="small text-muted">Bruce Kane CPA works directly with entrepreneurs, founders, and senior corporate executives whose tax situations demand a higher level of expertise and more sophisticated planning than standard compliance services can provide. His executive clients frequently manage complex multi-entity corporate structures, deferred compensation arrangements, equity-based assets, and long-range succession or exit planning strategies that require careful, customized handling by a Certified Public Accountant with genuine depth of experience.</p>
+                        <p class="small text-muted">His approach with executive and entrepreneur clients is collaborative and transparent. Bruce Kane CPA takes the time to fully understand each client's professional goals and financial circumstances before developing any recommendation, and he maintains active communication throughout the year to keep strategies aligned with the client's evolving situation. The result is a long-term advisory relationship founded on trust, clarity, and a consistent record of meaningful financial results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Expertise & Education Section -->
+    <section class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-md-6">
+                <h2 class="section-title">Expertise</h2>
+                <div class="mb-4">
+                    <h5>Professional Tax Planning</h5>
+                    <p class="text-muted">Tax planning is the foundation of everything Bruce Kane CPA does as a Certified Public Accountant. He has spent his career building a comprehensive command of the full U.S. tax code at the federal, state, and local levels, and applying that command to develop strategies that produce real, measurable financial benefits for the businesses and individuals he serves. His planning process is exhaustive, covering income tax, capital gains, payroll obligations, entity-level taxation, and multi-state compliance across a wide range of business structures and financial situations.</p>
+                    <p class="text-muted">Bruce Kane CPA's planning work begins with a complete and detailed financial review that gives him an accurate, current picture of the client's situation and a clear understanding of where they are headed. From that foundation, he builds strategies that are precisely calibrated to the client's specific goals, legally minimizing tax exposure while ensuring complete regulatory compliance at every level.</p>
+                </div>
+                <div class="mb-4">
+                    <h5>Business Mergers and Acquisitions</h5>
+                    <p class="text-muted">Bruce Kane CPA's expertise in mergers and acquisitions tax advisory is one of the most valuable and distinctive elements of his professional practice. He has guided clients through transactions of varying scale and complexity, consistently delivering thorough, accurate analysis and clear strategic guidance that allows deals to close with confidence and post-transaction integration to proceed without costly financial complications.</p>
+                    <p class="text-muted">His M&A advisory work covers every phase of a transaction, from pre-deal due diligence and liability identification through transaction structuring analysis and post-closing tax planning. For buyers, Bruce Kane CPA ensures a complete understanding of the tax profile of what is being acquired before the deal is finalized. For sellers, his planning expertise helps structure exits in the most tax-efficient manner possible, protecting the financial outcome of a transaction they have often spent years building toward.</p>
+                </div>
+                <div>
+                    <h5>Strategic Entity Selection</h5>
+                    <p class="text-muted">Selecting the right legal and tax structure is one of the most impactful early decisions a business owner can make. Bruce Kane CPA helps entrepreneurs evaluate the tax and legal implications of every major entity type including sole proprietorships, general and limited partnerships, limited liability companies, S-corporations, and C-corporations, guiding them toward the structure that best supports their current operations, their growth plans, and their long-term financial objectives.</p>
+                    <p class="text-muted">As businesses grow and circumstances evolve, Bruce Kane CPA also provides restructuring advisory to help clients transition to more advantageous structures without triggering unnecessary tax consequences.</p>
+                </div>
+            </div>
+            <div class="col-md-6 bg-light p-4 rounded border-start border-4 shadow-sm" style="border-color: var(--primary-gold) !important;">
+                <h3 class="h4 mb-3" style="color: var(--dark-bg); font-weight:700;">Public Speaking and Education</h3>
+                <p>Bruce Kane CPA is a recognized speaker and educator in the Central New York business community, regularly sharing his professional expertise with business owners, executives, trade associations, and professional organizations throughout New York State. His speaking engagements cover a broad range of tax and financial planning topics with a consistent focus on practical, immediately applicable insights that his audiences can use to make better financial decisions.</p>
+                <p>His presentations are praised for combining technical depth with clear, accessible communication. Bruce Kane CPA does not simply recite regulatory rules in abstract terms. He contextualizes every topic, illustrating how changes in tax law affect real business decisions and what specific steps organizations can take to improve their financial position in response.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="split-section border-top">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-3" style="color: var(--dark-bg);"><i class="fa-solid fa-bullseye me-2" style="color: var(--accent-blue);"></i>My Mission</h3>
+                    <p>My mission as Bruce Kane CPA is to deliver the highest standard of tax planning and financial advisory service to every client I work with in Syracuse and throughout Central New York. I believe that accurate, proactive tax guidance is one of the most powerful tools available to entrepreneurs, executives, and organizations that are committed to building and preserving long-term financial strength. Through precise analysis, personalized strategies, and consistent professional engagement, I help my clients navigate a complex and constantly evolving tax environment with full confidence in their financial position.</p>
+                    <p>As a Certified Public Accountant, I am committed to being more than a service provider. I aim to be a trusted partner that clients can rely on throughout the year for honest, knowledgeable guidance on the financial decisions that matter most. Every person and organization I serve deserves a CPA who brings genuine expertise, clear communication, and a real investment in their success to every engagement.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="fw-bold mb-3" style="color: var(--dark-bg);"><i class="fa-solid fa-eye me-2" style="color: var(--accent-blue);"></i>My Vision</h3>
+                    <p>Bruce Kane CPA envisions a future where every entrepreneur and executive in Syracuse and Central New York has access to the kind of sophisticated, proactive tax guidance that was once available only to large corporations. He believes that small and mid-size businesses deserve the same level of strategic, personalized tax planning that major organizations rely on, and he has built his practice specifically to deliver that standard of service to a broader range of clients across the region.</p>
+                    <p>His vision for the future of his practice is centered on continuous growth in both knowledge and capability. Bruce Kane CPA is committed to staying at the forefront of developments in tax law and financial regulation, investing in the tools and relationships that allow him to serve clients at the highest possible level. His goal is not simply to help clients comply with the tax code but to use his expertise as a strategic instrument that actively supports their growth, protects their financial interests, and positions them for lasting success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <h5 class="mb-4" style="color: var(--primary-gold);">Connect with Bruce Kane CPA</h5>
+            
+            <!-- Social Icons List -->
+            <div class="social-icons mb-4">
+                <a href="https://x.com/bruce_s_kane" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.facebook.com/brucesherwoodkane/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/company/bruce-s-kane" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/bruce_s_kane/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@BruceSherwoodKane" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.pinterest.com/brucesherwoodkane/" target="_blank" title="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.tiktok.com/@brucekanecpa" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.reddit.com/user/brucekanecpa/" target="_blank" title="Reddit"><i class="fa-brands fa-reddit"></i></a>
+                <a href="https://soundcloud.com/brucekanecpa" target="_blank" title="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+                <a href="https://solo.to/brucesherwoodkane" target="_blank" title="Solo.to"><i class="fa-solid fa-link"></i></a>
+                <a href="https://genius.com/brucesherwoodkane" target="_blank" title="Genius"><i class="fa-solid fa-music"></i></a>
+                <a href="https://www.dailymotion.com/brucesherwoodkane" target="_blank" title="Dailymotion"><i class="fa-solid fa-play"></i></a>
+                <a href="https://soundbetter.com/profiles/706685-bruce-sherwood-kane" target="_blank" title="SoundBetter"><i class="fa-solid fa-sliders"></i></a>
+            </div>
+            
+            <hr style="background-color: var(--primary-gold); height: 1px; border: none;">
+            
+            <p class="small text-muted mb-0">&copy; 2026 Bruce Kane CPA. All Rights Reserved. | Syracuse, NY</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
